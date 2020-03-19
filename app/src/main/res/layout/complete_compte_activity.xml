@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        
+        <TextView
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:id="@+id/hint"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:textColor="#212121"
+            android:text="Chomplete compte"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:padding="16sp"
+            android:id="@+id/spinner"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/hint"
+            android:entries="@array/tunisie"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16sp"
+            android:id="@+id/edt"
+            android:layout_margin="16sp"
+            android:hint="Describe your location"
+            app:layout_constraintTop_toBottomOf="@+id/spinner"/>
+
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="16sp"
+            android:text="My profile"
+            android:textColor="#FFF"
+            android:background="@drawable/back_login_bottom"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
